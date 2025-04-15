@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Kő - Papír - Olló</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="tartalom">
+        <h1>Kő - Papír - Olló</h1>
+        <h1>Játék</h1>
+
+        <div class="ponttabla">
+            
+            <p>Játékos: <span id="jatekos-pont">0</span></p>
+            
+            <p>Számítógép: <span id="gep-pont">0</span></p>
+        </div>
+       
+        <div class="valasztasok">
+           
+            <button class="gomb" data-choice="rock">
+                <img src="images/fist.png" alt="Kő">
+            </button>
+            <button class="gomb" data-choice="paper">
+                <img src="images/hand-paper.png" alt="Papír">
+            </button>
+            <button class="gomb" data-choice="scissors">
+                <img src="images/scissors.png" alt="Olló">
+            </button>
+        </div>
+        
+        <div class="eredmeny">
+    
+            <p id="eredmeny-szoveg"></p>
+            <div class="kivalasztasok">
+                <span id="jatekos-valasztas"></span>
+                <span id="gep-valasztas"></span>
+            </div>
+        </div>
+    
+        <button id="ujrakezdes">Új játék</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
